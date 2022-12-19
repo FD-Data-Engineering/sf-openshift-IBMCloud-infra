@@ -34,7 +34,7 @@ services:
             # Uncomment to include custom plugins
             - ./plugins:/usr/local/airflow/plugins
             # Apache Spark scripts 
-            - ./selenium_scripts:/usr/local/airflow/spark_scripts
+            - ./spark_scripts:/usr/local/airflow/spark_scripts
             # Airflow Job downloads
             - downloads:/usr/local/airflow/downloads
         ports:
@@ -68,7 +68,7 @@ services:
             # Uncomment to include custom plugins
             - ./plugins:/usr/local/airflow/plugins
             # Apache Spark scripts 
-            - ./selenium_scripts:/usr/local/airflow/spark_scripts
+            - ./spark_scripts:/usr/local/airflow/spark_scripts
             # Airflow Job downloads
             - downloads:/usr/local/airflow/downloads
         environment:
@@ -92,8 +92,8 @@ services:
             - /var/run/docker.sock:/var/run/docker.sock
             # Uncomment to include custom plugins
             - ./plugins:/usr/local/airflow/plugins
-            # Selenium scripts 
-            - ./selenium_scripts:/usr/local/airflow/selenium_scripts
+            # Apache Spark scripts 
+            - ./spark_scripts:/usr/local/airflow/spark_scripts
             # Selenium downloads
             - downloads:/usr/local/airflow/downloads
         environment:
