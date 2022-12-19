@@ -33,9 +33,9 @@ services:
             - ./dags:/usr/local/airflow/dags
             # Uncomment to include custom plugins
             - ./plugins:/usr/local/airflow/plugins
-            # Selenium scripts 
-            - ./selenium_scripts:/usr/local/airflow/selenium_scripts
-            # Selenium downloads
+            # Apache Spark scripts 
+            - ./selenium_scripts:/usr/local/airflow/spark_scripts
+            # Airflow Job downloads
             - downloads:/usr/local/airflow/downloads
         ports:
             - "8080:8080"
@@ -67,9 +67,9 @@ services:
             - ./dags:/usr/local/airflow/dags
             # Uncomment to include custom plugins
             - ./plugins:/usr/local/airflow/plugins
-            # Selenium scripts 
-            - ./selenium_scripts:/usr/local/airflow/selenium_scripts
-            # Selenium downloads
+            # Apache Spark scripts 
+            - ./selenium_scripts:/usr/local/airflow/spark_scripts
+            # Airflow Job downloads
             - downloads:/usr/local/airflow/downloads
         environment:
             - LOAD_EX=n
@@ -118,3 +118,4 @@ networks:
 volumes:
    downloads:
       external: true
+    
