@@ -24,7 +24,7 @@ services:
         environment:
             - LOAD_EX=n
             - FERNET_KEY=46BKJoQYlPPOexq0OhDZnIlNepKFf87WFwLbfzqDDho=
-            - EXECUTOR=Celery
+            - EXECUTOR=SparkRun
             # - POSTGRES_USER=airflow
             # - POSTGRES_PASSWORD=airflow
             # - POSTGRES_DB=airflow
@@ -52,7 +52,7 @@ services:
         depends_on:
             - redis
         environment:
-            - EXECUTOR=Celery
+            - EXECUTOR=SparkRun
             # - REDIS_PASSWORD=redispass
         ports:
             - "5555:5555"
@@ -74,7 +74,7 @@ services:
         environment:
             - LOAD_EX=n
             - FERNET_KEY=46BKJoQYlPPOexq0OhDZnIlNepKFf87WFwLbfzqDDho=
-            - EXECUTOR=Celery
+            - EXECUTOR=SparkRun
             # - POSTGRES_USER=airflow
             # - POSTGRES_PASSWORD=airflow
             # - POSTGRES_DB=airflow
@@ -98,7 +98,7 @@ services:
             - downloads:/usr/local/airflow/downloads
         environment:
             - FERNET_KEY=46BKJoQYlPPOexq0OhDZnIlNepKFf87WFwLbfzqDDho=
-            - EXECUTOR=Celery
+            - EXECUTOR=SparkRun
             # - POSTGRES_USER=airflow
             # - POSTGRES_PASSWORD=airflow
             # - POSTGRES_DB=airflow
