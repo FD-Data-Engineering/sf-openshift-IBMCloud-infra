@@ -7,21 +7,21 @@ output "cluster_username" {
 }
 
 output "cluster_password" {
-  value = module.cluster.password
+  value     = module.cluster.password
   sensitive = true
 }
 
 output "cluster_token" {
-  value = module.cluster.token
+  value     = module.cluster.token
   sensitive = true
 }
 
 output "cluster_ingress" {
-  value = module.cluster.platform.ingress
+  value     = module.cluster.platform.ingress
   sensitive = true
 }
 
 output "cluster_kubeconfig" {
-  value = module.cluster.platform.kubeconfig
+  value     = module.cluster.platform.kubeconfig
   sensitive = true
 }
