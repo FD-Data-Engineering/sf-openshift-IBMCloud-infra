@@ -1,0 +1,97 @@
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-access-group.clis/scripts: (all) Input: {"bin_dir":"/home/anton/code/workspaces/current/105-ibm-vpc-openshift/bin2","clis":"jq","uuid":"ailwzgywhifjgcmt"}
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/cos.clis/scripts: (all) Input: {"bin_dir":"/home/anton/code/workspaces/current/105-ibm-vpc-openshift/bin2","clis":"jq","uuid":"gflfzajbxenbagas"}
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/sysdig-bind.setup_clis/scripts: (all) Input: {"bin_dir":"/home/anton/code/workspaces/current/105-ibm-vpc-openshift/bin2","clis":"ibmcloud-ob","uuid":"pzzehbvdlsnjfran"}
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-access-group.clis/scripts: (all) Detected os type: linux
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-activity-tracker.clis/scripts: (all) Input: {"bin_dir":"/home/anton/code/workspaces/current/105-ibm-vpc-openshift/bin2","clis":"yq,jq,igc","uuid":"spoasfezifuysywg"}
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-access-group.clis/scripts: (all) Detected architecture: amd64
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/cos.clis/scripts: (all) Detected os type: linux
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/cos.clis/scripts: (all) Detected architecture: amd64
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/sysdig-bind.setup_clis/scripts: (all) Detected os type: linux
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-activity-tracker.clis/scripts: (all) Detected os type: linux
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/sysdig-bind.setup_clis/scripts: (all) Detected architecture: amd64
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-activity-tracker.clis/scripts: (all) Detected architecture: amd64
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-logdna-bind.setup_clis/scripts: (all) Input: {"bin_dir":"/home/anton/code/workspaces/current/105-ibm-vpc-openshift/bin2","clis":"ibmcloud-ob","uuid":"nkqycmswoxkvybua"}
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/resource_group.clis/scripts: (all) Input: {"bin_dir":"/home/anton/code/workspaces/current/105-ibm-vpc-openshift/bin2","clis":"yq,jq,igc","uuid":"bcfcfvntmucfuxfh"}
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/cluster.setup_clis/scripts: (all) Input: {"bin_dir":"/home/anton/code/workspaces/current/105-ibm-vpc-openshift/bin2","clis":"jq","uuid":"qvdnewccpsodnsrx"}
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/cos.clis/scripts: (jq) CLI already available in PATH. Creating symlink in 
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/cluster.setup_clis/scripts: (all) Detected os type: linux
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/cluster.setup_clis/scripts: (all) Detected architecture: amd64
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/resource_group.clis/scripts: (all) Detected os type: linux
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/resource_group.clis/scripts: (all) Detected architecture: amd64
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/cos.clis/scripts: (jq) CLI already available in PATH. Creating symlink in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/cos.clis/scripts: (all) Completed: {"status": "success", "message": "success", "type": "", "bin_dir": "/home/anton/code/workspaces/current/105-ibm-vpc-openshift/bin2"}
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-activity-tracker.clis/scripts: (jq) CLI already provided in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-access-group.clis/scripts: (jq) Recent version of cli found in path: 1.6
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-access-group.clis/scripts: (jq) CLI already available in PATH. Creating symlink in /home/anton/code/workspaces/current/bin
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-logdna-bind.setup_clis/scripts: (all) Detected os type: linux
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/cluster.setup_clis/scripts: (jq) CLI already provided in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-logdna-bind.setup_clis/scripts: (all) Detected architecture: amd64
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/sysdig-bind.setup_clis/scripts: (jq) Recent version of cli found in path: 1.6
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/sysdig-bind.setup_clis/scripts: (jq) CLI already available in PATH. Creating symlink in /home/anton/code/workspaces/current/bin
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-access-group.clis/scripts: (jq) CLI already provided in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/resource_group.clis/scripts: (jq) CLI already provided in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/sysdig-bind.setup_clis/scripts: (jq) CLI already provided in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-logdna-bind.setup_clis/scripts: (jq) CLI already provided in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-logdna-bind.setup_clis/scripts: (kubeseal) Downloading cli tar file: https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.19.2/kubeseal-0.19.2-linux-amd64.tar.gz
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-activity-tracker.clis/scripts: (kubeseal) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/resource_group.clis/scripts: (kubeseal) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/sysdig-bind.setup_clis/scripts: (kubeseal) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/cluster.setup_clis/scripts: (kubeseal) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-access-group.clis/scripts: (kubeseal) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-activity-tracker.clis/scripts: (kubeseal) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/resource_group.clis/scripts: (kubeseal) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/sysdig-bind.setup_clis/scripts: (kubeseal) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/cluster.setup_clis/scripts: (kubeseal) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-access-group.clis/scripts: (kubeseal) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-logdna-bind.setup_clis/scripts: (kubeseal) Unpacking kubeseal from tar file /home/anton/code/workspaces/current/bin/kubeseal-nkqycmswoxkvybua.tgz
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-logdna-bind.setup_clis/scripts: (kubeseal) Installing the cli in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-logdna-bind.setup_clis/scripts: (igc) Downloading cli: https://github.com/cloud-native-toolkit/ibm-garage-cloud-cli/releases/download/v1.42.3/igc-linux
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/resource_group.clis/scripts: (igc) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-activity-tracker.clis/scripts: (igc) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-access-group.clis/scripts: (igc) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/cluster.setup_clis/scripts: (igc) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/sysdig-bind.setup_clis/scripts: (igc) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/resource_group.clis/scripts: (igc) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-activity-tracker.clis/scripts: (igc) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-access-group.clis/scripts: (igc) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/cluster.setup_clis/scripts: (igc) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/sysdig-bind.setup_clis/scripts: (igc) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/resource_group.clis/scripts: (igc) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-activity-tracker.clis/scripts: (igc) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-access-group.clis/scripts: (igc) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/cluster.setup_clis/scripts: (igc) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/sysdig-bind.setup_clis/scripts: (igc) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/resource_group.clis/scripts: (igc) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-activity-tracker.clis/scripts: (igc) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-access-group.clis/scripts: (igc) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/cluster.setup_clis/scripts: (igc) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/sysdig-bind.setup_clis/scripts: (igc) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-logdna-bind.setup_clis/scripts: (igc) Installing the cli in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-logdna-bind.setup_clis/scripts: (oc) CLI already available in PATH. Creating symlink in /home/anton/code/workspaces/current/bin
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-logdna-bind.setup_clis/scripts: (kubectl) CLI already available in PATH. Creating symlink in /home/anton/code/workspaces/current/bin
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-logdna-bind.setup_clis/scripts: (ibmcloud) CLI already available in PATH. Creating symlink in /home/anton/code/workspaces/current/bin
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-logdna-bind.setup_clis/scripts: (ibmcloud-observe-service) Plugin already installed: observe-service
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-logdna-bind.setup_clis/scripts: (all) Completed: {"status": "success", "message": "success", "type": "", "bin_dir": "/home/anton/code/workspaces/current/105-ibm-vpc-openshift/bin2"}
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/resource_group.clis/scripts: (oc) CLI already provided in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-activity-tracker.clis/scripts: (oc) CLI already provided in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-access-group.clis/scripts: (oc) CLI already provided in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/cluster.setup_clis/scripts: (oc) CLI already provided in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/resource_group.clis/scripts: (kubectl) CLI already provided in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-activity-tracker.clis/scripts: (kubectl) CLI already provided in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-access-group.clis/scripts: (kubectl) CLI already provided in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-access-group.clis/scripts: (all) Completed: {"status": "success", "message": "success", "type": "", "bin_dir": "/home/anton/code/workspaces/current/105-ibm-vpc-openshift/bin2"}
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/cluster.setup_clis/scripts: (kubectl) CLI already provided in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/cluster.setup_clis/scripts: (all) Completed: {"status": "success", "message": "success", "type": "", "bin_dir": "/home/anton/code/workspaces/current/105-ibm-vpc-openshift/bin2"}
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-activity-tracker.clis/scripts: (yq3) CLI is already being installed; waiting 10 seconds
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/resource_group.clis/scripts: (yq3) Downloading cli: https://github.com/mikefarah/yq/releases/download/3.4.1/yq_linux_amd64
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/sysdig-bind.setup_clis/scripts: (oc) CLI already provided in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/sysdig-bind.setup_clis/scripts: (kubectl) CLI already provided in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/sysdig-bind.setup_clis/scripts: (ibmcloud) CLI already provided in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/sysdig-bind.setup_clis/scripts: (ibmcloud-observe-service) Plugin already installed: observe-service
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/sysdig-bind.setup_clis/scripts: (all) Completed: {"status": "success", "message": "success", "type": "", "bin_dir": "/home/anton/code/workspaces/current/105-ibm-vpc-openshift/bin2"}
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/resource_group.clis/scripts: (yq3) Installing the cli in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/resource_group.clis/scripts: (yq4) Downloading cli: https://github.com/mikefarah/yq/releases/download/v4.25.2/yq_linux_amd64
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/resource_group.clis/scripts: (yq4) Installing the cli in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/resource_group.clis/scripts: (all) Completed: {"status": "success", "message": "success", "type": "", "bin_dir": "/home/anton/code/workspaces/current/105-ibm-vpc-openshift/bin2"}
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-activity-tracker.clis/scripts: (yq4) CLI already provided in bin_dir
+/home/anton/code/workspaces/current/105-ibm-vpc-openshift/.terraform/modules/ibm-activity-tracker.clis/scripts: (all) Completed: {"status": "success", "message": "success", "type": "", "bin_dir": "/home/anton/code/workspaces/current/105-ibm-vpc-openshift/bin2"}
