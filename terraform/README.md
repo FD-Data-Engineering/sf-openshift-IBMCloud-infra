@@ -20,17 +20,7 @@ Set up a env var with an [IBM Cloud API Key](https://cloud.ibm.com/iam/apikeys)
 export TF_VAR_ibmcloud_api_key=xxx
 ```
 
-## install
-
-1. Currently the generated config based on the [quick start](https://github.com/IBM/automation-ibmcloud-infra-openshift/tree/main/1-quickstart) is stored here so it's just a matter of running the terraform script.
-
-    ```
-    cd 105-ibm-vpc-openshift
-    terraform init
-    terraform apply -auto-approve
-    ```
-
-## A serverless backend for Terraform
+## Remote State for Terraform
 This is an implementation of [http](https://developer.hashicorp.com/terraform/language/settings/backends/http) backend which stores Terraform states using a REST client.
 
 ## Step 1 - Prepare the backend
@@ -61,11 +51,15 @@ terraform apply -auto-approve
 2. Load the backend configuration variables
 ``source backend.env``
 
-3. Initialise the backend and apply the configuration
-```
-terraform init
-terraform apply -auto-approve
-```
+## install
+
+1. Currently the generated config based on the [quick start](https://github.com/IBM/automation-ibmcloud-infra-openshift/tree/main/1-quickstart) is stored here so it's just a matter of running the terraform script.
+
+    ```
+    cd 105-ibm-vpc-openshift
+    terraform init
+    terraform apply -auto-approve
+    ```
 
 
 
