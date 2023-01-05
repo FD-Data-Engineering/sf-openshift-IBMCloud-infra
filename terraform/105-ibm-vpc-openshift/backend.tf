@@ -7,7 +7,7 @@ terraform {
     # password
 
     # Do not change the following
-    username = "cos"
+    username               = "cos"
     update_method          = "POST"
     lock_method            = "PUT"
     unlock_method          = "DELETE"
