@@ -30,5 +30,45 @@ export TF_VAR_ibmcloud_api_key=xxx
     terraform apply -auto-approve
     ```
 
-## notes
-The tfstate files are currently included this will need to be addressed. 
+## A serverless backend for Terraform
+This is an implementation of [http](https://developer.hashicorp.com/terraform/language/settings/backends/http) backend which stores Terraform states using a REST client.
+
+## Step 1 - Prepare the backend
+This first step utilises Terraform to create the following:
+- a resource group,
+- a COS instance with a bucket,
+- Cloud Functions namespace, package and action.
+
+1. Change to the step directory
+``cd prepare-backend``
+
+2. Copy the terraform configuration
+
+``cp terraform.tfvars.template terraform.tfvars`` and update the configuration.
+
+3. Create the resources
+
+```
+terraform init
+terraform apply -auto-approve
+```
+
+## Step 2 - Use the backend
+
+1. Navigate to the main project directory
+``cd 105-ibm-vpc-openshift``
+
+2. Load the backend configuration variables
+``source backend.env``
+
+3. Initialise the backend and apply the configuration
+```
+terraform init
+terraform apply -auto-approve
+```
+
+
+
+
+
+
