@@ -21,7 +21,7 @@ spec:
       containers:
         - env:
             - name: EXECUTOR
-              value: Celery
+              value: SparkRun
             - name: FERNET_KEY
               value: 46BKJoQYlPPOexq0OhDZnIlNepKFf87WFwLbfzqDDho=
             - name: LOAD_EX
