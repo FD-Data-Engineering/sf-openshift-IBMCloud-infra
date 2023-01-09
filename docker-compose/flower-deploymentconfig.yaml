@@ -22,7 +22,7 @@ spec:
             - flower
           env:
             - name: EXECUTOR
-              value: Celery
+              value: SparkRun
           image: ' '
           name: flower
           ports:
