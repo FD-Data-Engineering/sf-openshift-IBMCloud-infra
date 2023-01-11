@@ -124,7 +124,7 @@ variable "cluster_disable_public_endpoint" {
 variable "cluster_ocp_entitlement" {
   type        = string
   description = "Value that is applied to the entitlements for OCP cluster provisioning"
-  default     = "cloud_pak"
+  default     = ""
 }
 variable "cluster_force_delete_storage" {
   type        = bool
