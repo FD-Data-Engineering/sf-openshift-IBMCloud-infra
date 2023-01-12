@@ -151,5 +151,7 @@ export TF_HTTP_PASSWORD="${ibm_resource_key.cos_key.credentials.apikey}"
 export TF_HTTP_LOCK_ADDRESS=$TF_HTTP_ADDRESS
 export TF_HTTP_UNLOCK_ADDRESS=$TF_HTTP_ADDRESS
 EOF
-  filename = "../105-ibm-vpc-openshift/backend.env"
+  filename = "../workspaces/current/105-ibm-vpc-openshift/backend.env"
 }
+
+
