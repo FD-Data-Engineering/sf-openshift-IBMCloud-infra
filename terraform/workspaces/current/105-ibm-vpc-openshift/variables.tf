@@ -285,3 +285,33 @@ variable "cos_label" {
   description = "The name that should be used for the service, particularly when connecting to an existing service. If not provided then the name will be defaulted to {name prefix}-{service}"
   default     = "cos"
 }
+
+variable "cos_instance_tags" {
+  type    = list(string)
+  default = ["terraform", "dev_sf"]
+}
+
+variable "cos_basename" {
+  type    = string
+  default = ""
+}
+
+variable "cos_resource_group_name" {
+  type    = string
+  default = ""
+}
+
+variable "cos_instance_names" {
+  type    = list(any)
+  default = ["Airbus", "Gamma"]
+}
+
+variable "airbus_bucket_names" {
+  type    = list(any)
+  default = ["ingestedairbusdata", "publishedairbusdata", "transformedairbusdata"]
+}
+
+variable "gamma_bucket_names" {
+  type    = list(any)
+  default = ["ingestedgammadata", "publishedgammadata", "transformedgammadata"]
+}

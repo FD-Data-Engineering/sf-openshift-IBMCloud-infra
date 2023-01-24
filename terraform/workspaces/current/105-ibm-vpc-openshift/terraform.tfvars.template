@@ -29,3 +29,6 @@ cluster_flavor = "bx2.8x32"
 ## config_banner_text: The text that will appear in the top banner in the cluster
 config_banner_text = "DEV Sustainability Cloud"
 
+# Prefix for the resources to be created
+cos_basename = "dev_sf_customer_buckets"
+
