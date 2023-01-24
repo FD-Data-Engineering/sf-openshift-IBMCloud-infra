@@ -2,7 +2,7 @@
 ibmcloud_api_key=""
 
 # Prefix for the resources to be created
-basename="dev-sf-tf-backend"
+basename="dev-sf-os-tf-backend"
 
 # Region where to create resources
 region="eu-de"

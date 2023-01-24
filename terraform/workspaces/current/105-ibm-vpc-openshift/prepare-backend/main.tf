@@ -14,7 +14,7 @@ variable "region" {
 
 variable "basename" {
   type    = string
-  default = "dev-sf-tf-backend"
+  default = "dev-sf-os-tf-backend"
 }
 
 variable "resource_group" {
@@ -112,7 +112,7 @@ EOF
 
 # the backend implementation
 resource "ibm_function_action" "backend" {
-  name = "${ibm_function_package.package.name}/backend"
+  name = "${ibm_function_package.package.name}/os_infra_backend"
   namespace = ibm_function_namespace.namespace.name
   exec {
     kind = "nodejs:10"
