@@ -6,27 +6,20 @@ resource "ibm_resource_instance" "resource_instance" {
   resource_group_id = module.resource_group.id
   tags              = var.ibm-vpc_tags == null ? null : jsondecode(var.ibm-vpc_tags)
   parameters_json   = <<PARAMETERS_JSON
-    {
-      "num_compute_nodes": "1",
-      "hardware_config": "default",
-      "software_package": "ae-1.2-hadoop-spark",
-      "autoscale_policy": {
-      "task_nodes": {
-        "num_min_nodes": 1,
-        "num_max_nodes": 10,
-        "scaleup_rule": {
-          "sustained_demand_period_minutes": "10",
-          "percentage_of_demand": "50"
-        },
-        "scaledown_rule": {
-          "sustained_excess_period_minutes": "20",
-          "percentage_of_excess": "25"
-        }
-      }
+  {
+  "default_runtime": {
+    "spark_version": "3.1"
+    },
+  "instance_home": {
+    "region": "eu-de",
+    "endpoint": "https://s3.direct.eu-de.cloud-object-storage.appdomain.cloud",
+    "hmac_access_key": "${var.hmac_access_key}",
+    "hmac_secret_key": "${var.hmac_secret_key}"
+    },
+  "default_config": {
     }
-  }
+}
     PARAMETERS_JSON
-
   timeouts {
     create = "30m"
     update = "15m"

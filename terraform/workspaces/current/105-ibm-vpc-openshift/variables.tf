@@ -315,3 +315,11 @@ variable "gamma_bucket_names" {
   type    = list(any)
   default = ["ingestedgammadata", "publishedgammadata", "transformedgammadata"]
 }
+
+variable "hmac_access_key" {
+  default = ""
+}
+
+variable "hmac_secret_key" {
+  default = ""
+}
