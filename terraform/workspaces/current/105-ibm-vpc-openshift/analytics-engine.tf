@@ -4,7 +4,6 @@ resource "ibm_resource_instance" "resource_instance" {
   plan              = "standard-serverless-spark"
   location          = var.region
   resource_group_id = module.resource_group.id
-  tags              = var.ibm-vpc_tags == null ? null : jsondecode(var.ibm-vpc_tags)
   parameters_json   = <<PARAMETERS_JSON
   {
   "default_runtime": {
@@ -20,6 +19,8 @@ resource "ibm_resource_instance" "resource_instance" {
     }
 }
     PARAMETERS_JSON
+  tags              = "${var.cos_instance_tags}"
+
   timeouts {
     create = "30m"
     update = "15m"
