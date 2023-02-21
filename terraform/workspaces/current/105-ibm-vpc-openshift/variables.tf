@@ -323,3 +323,122 @@ variable "hmac_access_key" {
 variable "hmac_secret_key" {
   default = ""
 }
+
+variable "ibm-secrets-manager_create_auth" {
+  type        = bool
+  description = "Flag indicating the service authorization should be created to allow this service to access the KMS service"
+  default     = true
+}
+
+variable "ibm-secrets-manager_kms_enabled" {
+  type        = bool
+  description = "Flag indicating that kms encryption should be enabled for this instance"
+  default     = true
+}
+
+variable "ibm-secrets-manager_label" {
+  type        = string
+  description = "Label used to build the Secrets Manager name if not provided."
+  default     = "sm"
+}
+
+variable "ibm-secrets-manager_name" {
+  type        = string
+  description = "Name of the Secrets Manager. If not provided will be generated as $name_prefix-$label"
+  default     = ""
+}
+
+variable "ibm-secrets-manager_private_endpoint" {
+  type        = bool
+  description = "Flag indicating that the service should be access using private endpoints"
+  default     = false
+}
+
+variable "ibm-secrets-manager_provision" {
+  type        = bool
+  description = "Flag indicating that the instance should be provisioned. If false then an existing instance will be looked up"
+  default     = true
+}
+
+variable "ibm-secrets-manager_purge" {
+  type        = bool
+  description = "Flag indicating whether the instance should be purged from reclamation on destroy"
+  default     = false
+}
+
+variable "ibm-secrets-manager_trial" {
+  type        = bool
+  description = "Flag indicating whether the instance to be deployed is to be a trial plan. "
+  default     = false
+}
+
+variable "sm-key_dual_auth_delete" {
+  type        = bool
+  description = "Flag indicating that the key requires dual authorization to be deleted."
+  default     = false
+}
+
+variable "sm-key_force_delete" {
+  type        = bool
+  description = "Flag indicating that 'force' should be applied to key on delete"
+  default     = true
+}
+
+variable "sm-key_label" {
+  type        = string
+  description = "The label used to build the name if one is not provided. If used the name will be `{name_prefix}-{label}`"
+  default     = "key"
+}
+
+variable "sm-key_name" {
+  type        = string
+  description = "The name of the root key in the kms instance. Required if kms_enabled is true"
+  default     = ""
+}
+
+variable "sm-key_provision" {
+  type        = bool
+  description = "Flag indicating that the key should be provisioned. If false then an existing key will be looked up"
+  default     = true
+}
+variable "sm-key_provision_key_rotation_policy" {
+  type        = bool
+  description = "Flag indicating that the key rotation policy should be provisioned. If false then a rotation policy will not be created."
+  default     = false
+}
+
+variable "sm-key_rotation_interval" {
+  type        = number
+  description = "The interval in months that a root key needs to be rotated."
+  default     = 3
+}
+
+variable "kms_name" {
+  type        = string
+  description = "The name that should be used for the service, particularly when connecting to an existing service. If not provided then the name will be defaulted to {name prefix}-{service}"
+  default     = ""
+}
+
+variable "kms_number_of_crypto_units" {
+  type        = number
+  description = "No of crypto units that has to be attached to the instance."
+  default     = 2
+}
+
+variable "kms_provision" {
+  type        = bool
+  description = "Flag indicating that key-protect instance should be provisioned"
+  default     = true
+}
+
+variable "kms_service" {
+  type        = string
+  description = "The name of the KMS provider that should be used (keyprotect or hpcs)"
+  default     = "keyprotect"
+}
+
+variable "kms_tags" {
+  type        = list(string)
+  description = "Tags that should be applied to the service"
+  default     = ["terraform", "dev_sf"]
+}
