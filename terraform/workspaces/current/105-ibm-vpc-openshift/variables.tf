@@ -303,7 +303,7 @@ variable "cos_resource_group_name" {
 
 variable "cos_instance_names" {
   type    = list(any)
-  default = ["Airbus", "Gamma"]
+  default = ["Airbus", "Gamma", "PACE"]
 }
 
 variable "airbus_bucket_names" {
@@ -314,6 +314,11 @@ variable "airbus_bucket_names" {
 variable "gamma_bucket_names" {
   type    = list(any)
   default = ["ingestedgammadata", "publishedgammadata", "transformedgammadata"]
+}
+
+variable "pace_bucket_names" {
+  type    = list(any)
+  default = ["ingestedpacedata", "publishedpacedata", "transformedpacedata"]
 }
 
 variable "hmac_access_key" {

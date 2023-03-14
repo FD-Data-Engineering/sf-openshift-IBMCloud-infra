@@ -41,3 +41,11 @@ resource "ibm_cos_bucket" "gamma_bucket" {
   region_location      = var.region
   storage_class        = "smart"
 }
+
+resource "ibm_cos_bucket" "pace_bucket" {
+  count                = length(var.pace_bucket_names)
+  bucket_name          = var.pace_bucket_names[count.index]
+  resource_instance_id = ibm_resource_instance.cos[2].id
+  region_location      = var.region
+  storage_class        = "smart"
+}
