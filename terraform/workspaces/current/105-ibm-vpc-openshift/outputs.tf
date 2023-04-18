@@ -25,3 +25,8 @@ output "cluster_kubeconfig" {
   value     = module.cluster.platform.kubeconfig
   sensitive = true
 }
+
+output "elasticsearch" {
+  value     = ibm_database.elasticsearch
+  sensitive = true
+}

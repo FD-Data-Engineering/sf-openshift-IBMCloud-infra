@@ -32,3 +32,12 @@ config_banner_text = "DEV Sustainability Cloud"
 # Prefix for the resources to be created
 cos_basename = "dev_sf_customer_buckets"
 
+users = [{
+  name     = "fdadmin"
+  password = "xxxxxxx"
+}]
+whitelist = [{
+  address     = "172.168.1.1/32"
+  description = "desc"
+}]
+
