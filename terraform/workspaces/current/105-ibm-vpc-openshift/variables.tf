@@ -472,22 +472,22 @@ variable "database_version" {
   description = "The database version to provision if specified"
 }
 variable "memory_allocation" {
-  default     = null
+  default     = 3072
   type        = number
   description = "Memory allocation required for database"
 }
 variable "disk_allocation" {
-  default     = null
+  default     = 30720
   type        = number
   description = "Disk allocation required for database"
 }
 variable "cpu_allocation" {
-  default     = null
+  default     = 9
   type        = number
   description = "CPU allocation required for database"
 }
 variable "service_endpoints" {
-  default     = null
+  default     = "public-and-private"
   type        = string
   description = "Types of the service endpoints. Possible values are 'public', 'private', 'public-and-private'."
 }
