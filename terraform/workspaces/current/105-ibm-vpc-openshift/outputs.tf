@@ -26,7 +26,7 @@ output "cluster_kubeconfig" {
   sensitive = true
 }
 
-output "elasticsearch" {
-  value     = ibm_database.elasticsearch
-  sensitive = true
-}
+# output "elasticsearch" {
+#   value     = ibm_database.elasticsearch
+#   sensitive = true
+# }
