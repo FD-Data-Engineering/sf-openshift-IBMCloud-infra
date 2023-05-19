@@ -448,6 +448,10 @@ variable "kms_tags" {
   default     = ["terraform", "dev_sf"]
 }
 
+variable "vm1_ssh_key" {
+  default = "dev-sf-elk-vm1"
+}
+
 ####################################################################################################
 
 # variable "service_name" {
