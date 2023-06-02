@@ -1,3 +1,10 @@
+locals {
+  elk_inbound_remote_address = toset([
+    "147.12.189.187"
+
+  ])
+}
+
 data "ibm_is_image" "ibm_centos" {
   name = "ibm-centos-stream-9-amd64-1"
 }
@@ -13,9 +20,10 @@ resource "ibm_is_security_group" "dev_sf_sg1" {
 }
 
 resource "ibm_is_security_group_rule" "ingress_ssh_all" {
+  for_each  = local.elk_inbound_remote_address
   group     = ibm_is_security_group.dev_sf_sg1.id
   direction = "inbound"
-  remote    = "0.0.0.0/0"
+  remote    = each.key
 
   tcp {
     port_min = 22
@@ -23,22 +31,11 @@ resource "ibm_is_security_group_rule" "ingress_ssh_all" {
   }
 }
 
-resource "ibm_is_security_group_rule" "ingress_http_all" {
-  group     = ibm_is_security_group.dev_sf_sg1.id
-  direction = "inbound"
-  remote    = "0.0.0.0/0"
-
-  tcp {
-    port_min = 80
-    port_max = 80
-  }
-}
-
 resource "ibm_is_security_group_rule" "ingress_logstash_all" {
+  for_each  = local.elk_inbound_remote_address
   group     = ibm_is_security_group.dev_sf_sg1.id
   direction = "inbound"
-  remote    = "0.0.0.0/0"
-
+  remote    = each.key
   tcp {
     port_min = 9600
     port_max = 9600
@@ -46,9 +43,10 @@ resource "ibm_is_security_group_rule" "ingress_logstash_all" {
 }
 
 resource "ibm_is_security_group_rule" "ingress_kibana_all" {
+  for_each  = local.elk_inbound_remote_address
   group     = ibm_is_security_group.dev_sf_sg1.id
   direction = "inbound"
-  remote    = "0.0.0.0/0"
+  remote    = each.key
 
   tcp {
     port_min = 5601
@@ -57,9 +55,10 @@ resource "ibm_is_security_group_rule" "ingress_kibana_all" {
 }
 
 resource "ibm_is_security_group_rule" "ingress_elasticsearch_all" {
+  for_each  = local.elk_inbound_remote_address
   group     = ibm_is_security_group.dev_sf_sg1.id
   direction = "inbound"
-  remote    = "0.0.0.0/0"
+  remote    = each.key
 
   tcp {
     port_min = 9200
@@ -68,9 +67,10 @@ resource "ibm_is_security_group_rule" "ingress_elasticsearch_all" {
 }
 
 resource "ibm_is_security_group_rule" "icmp" {
+  for_each  = local.elk_inbound_remote_address
   group     = ibm_is_security_group.dev_sf_sg1.id
   direction = "inbound"
-  remote    = "0.0.0.0/0"
+  remote    = each.key
   icmp {
     code = 0
     type = 8
